@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, auto);
+        }
+
+        .box {
+            padding: 80px 0px;
+            margin: 2px;
+            text-align: center;
+        }
+
+        .box-a {
+            background-color: gray;
+            grid-column: 1/3;
+        }
+
+        .box-b {
+            background-color: blue;
+            grid-column: 3/6;
+            grid-row: 1/3;
+        }
+
+        .box-c {
+            background-color: green;
+            grid-column: 1/3;
+
+        }
+
+        .box-d {
+            background-color: yellow;
+            grid-column: 1/3;
+        }
+
+        .box-e {
+            background-color: pink;
+            grid-column: 3/4;
+        }
+
+        .box-f {
+            background-color: skyblue;
+            grid-column: 4/6;
+        }
+
+        .box-g {
+            background-color: red;
+            grid-column: 1/6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box-a">1</div>
+        <div class="box box-b">2</div>
+        <div class="box box-c">5</div>
+        <div class="box box-d">7</div>
+        <div class="box box-e">8</div>
+        <div class="box box-f">9</div>
+        <div class="box box-g">11</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            padding: 80px 50px;
+            margin: 2px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+        }
+
+        .box1 {
+            background-color: red;
+            width: 35%;
+        }
+
+        .box5 {
+            background-color: green;
+            width: 35%;
+        }
+
+        .box7 {
+            background-color: lightgreen;
+            width: 35%;
+
+        }
+
+        .container1 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .box2 {
+            background-color: pink;
+            width: 50%;
+            position: absolute;
+            top: 0;
+            left: 42.8%;
+            height: 31%;
+        }
+
+        .container2 {
+            display: flex;
+            flex-wrap: wrap;
+
+            justify-content: flex-end;
+
+        }
+
+        .box8 {
+            width: 6.7%;
+            background-color: green;
+            position: absolute;
+            top: 56.8%;
+            right: 42.8%;
+        }
+
+        .box9 {
+            background-color: skyblue;
+            width: 35%;
+            position: absolute;
+            top: 56.8%;
+            right: 0%;
+        }
+
+        .box11 {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box5">5</div>
+        <div class="box box7">7</div>
+    </div>
+    <div class="container1">
+        <div class="box box2">2</div>
+    </div>
+    <div class="container2">
+        <div class="box box8">8</div>
+        <div class="box box9">9</div>
+    </div>
+    <div class="container3">
+        <div class="box box11">11</div>
+    </div>
+</body>
+
+</html>
